@@ -1,4 +1,4 @@
-github.com/google/uuid v1.6.0 h1:6B1wB+GxZ0x+zX6O0dX+0cZC3+gXkLr1R5q2G3kM6Jk=
-github.com/google/uuid v1.6.0/go.mod h1:6B1wB+GxZ0x+zX6O0dX+0cZC3+gXkLr1R5q2G3kM6Jk=
-github.com/pkg/errors v0.9.1 h1:FEBLx1Z3K8b8+Q4Kp8Xb+6Ew5F+0P0Y0cZp5K5g3p7I=
-github.com/pkg/errors v0.9.1/go.mod h1:Zp9nM1+5Qy3n7E9xP8ZB5Q5L6B4Y8C4F0y2xQ8ZP4F8=
+github.com/google/uuid v1.6.0 h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=
+github.com/google/uuid v1.6.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
+github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
