@@ -1,15 +1,29 @@
 package pkg1
 
 import (
-    "crypto/x509"
-    "math/big"
+	"crypto/x509"
+	"net/http/httptest"
+	"compress/zlib"
+	"bytes"
+	"io"
 )
 
 func Work() string {
-    var x big.Int
-    for i := 0; i < 5000; i++ {
-        x.Mul(&x, big.NewInt(int64(i+1)))
-    }
-    _ = x509.Certificate{}
-    return "pkg1 "
+	// Force heavy stdlib compilation
+	cert := &x509.Certificate{}
+	_ = cert
+
+	req := httptest.NewRequest("GET", "/", nil)
+	_ = req
+
+	var buf bytes.Buffer
+	w := zlib.NewWriter(&buf)
+	for i := 0; i < 50000; i++ {
+		w.Write([]byte("this forces compression work"))
+	}
+	w.Close()
+
+	io.Copy(io.Discard, &buf)
+
+	return "pkg1 "
 }
